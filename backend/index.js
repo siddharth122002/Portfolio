@@ -9,7 +9,10 @@ dotenv.config({
     path:'./.env'
 })
 
-app.use(cors());
+app.use(cors({
+    credentials:true,
+    origin:'https://portfolio-frontend-bice-five.vercel.app',
+}));
 app.use(express.json());
 
         
