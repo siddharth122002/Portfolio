@@ -6,7 +6,7 @@ function About() {
     
     return (
         <div className={dark?"dark":"light"}>
-        <section id="/about" className="py-20 border-b-2 border-blue-500 dark:bg-slate-800 ">
+        <section id="/about" className="py-20  dark:bg-slate-800 ">
             <div className="container mx-auto px-4">
                 <div className="text-center">
                     <h2 className="text-4xl font-bold text-slate-900 mb-12 dark:text-white "> About</h2>

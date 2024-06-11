@@ -2,34 +2,43 @@ import React, { useContext } from "react";
 import sci from "../assets/scispot.png";
 import book from "../assets/bookstore.png";
 import crypto from "../assets/crypto.png";
+import social from "../assets/ssss.png";
 import { UserContext } from "../context/UserContext";
 
 function Projects() {
   const {dark} = useContext(UserContext);
   return (
     <div className={dark?"dark":"light"}>
-      <section id="/projects" className="py-20 border-b-2 border-purple-700 dark:bg-slate-800">
+      <section id="/projects" className="py-20  dark:bg-slate-800">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-4xl font-bold text-slate-900 mb-12 dark:text-white">Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
               
               <ProjectCard
+                
                 title="SciSpot"
                 image={sci}
-                description="SciSpot shows summarized science articles.It shows CRUD,authentication,authorization(only the owner of a post can change it.)"
+                description="A MERN stack web app featuring secure user authentication and a user-friendly interface to showcase science articles with Cloudinary integration."
                 link="https://science-spot-frontend.vercel.app/"
               />
               <ProjectCard
                 title="Bookstore"
                 image={book}
-                description="Demonstrates CRUD functionality."
+                description="A MERN stack application for managing bookstore inventory with full CRUD operations and an intuitive interface."
                 link="https://books-frontend-fawn.vercel.app/"
               />
               <ProjectCard
                 title="Crypto"
                 image={crypto}
-                description="Uses coinGeckoAPI to fetch data and based on that gives latest Coin, Exchanges."
+                description="A responsive React web app using the CoinGecko API to display real-time cryptocurrency data with search functionality."
+                link="https://crypto-ten-mu.vercel.app/"
+              />
+              <ProjectCard
+                
+                title="PicShare"
+                image={social}
+                description="A web app for sharing photos, featuring functionalities for liking, commenting, and secure user login."
                 link="https://crypto-ten-mu.vercel.app/"
               />
             </div>
