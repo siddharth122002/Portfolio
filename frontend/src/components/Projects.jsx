@@ -39,7 +39,7 @@ function Projects() {
                 title="PicShare"
                 image={social}
                 description="A web app for sharing photos, featuring functionalities for liking, commenting, and secure user login."
-                link="https://crypto-ten-mu.vercel.app/"
+                link="https://pic-share-frontend-pink.vercel.app/"
               />
             </div>
           </div>
